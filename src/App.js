@@ -1,7 +1,22 @@
+import {Component} from 'react';
+//import Users from './components/users';
 import logo from './logo.svg';
 import './App.css';
+class App extends Component {
+  state = {
+    users: []
+  };
 
-function App() {
+  componentDidMount() {
+    fetch('https://jsonplaceholder.typicode.com/users')
+      .then(res => res.json())
+      .then((data) => {
+        this.setState({ users: data })
+      })
+      .catch(console.log)
+  }
+
+render() {
   return (
     <div className="App">
       <header className="App-header">
@@ -21,5 +36,5 @@ function App() {
     </div>
   );
 }
-
+}
 export default App;
