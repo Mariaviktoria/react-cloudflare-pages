@@ -21,7 +21,7 @@ render() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Maria Gromysh Site for editing demo</p>
+        <p>Maria Gromysh Page Site Change/p>
 	<p>Story of Cheburashka - <a href=""></a>.</p>
 	<p>
           Edit <code>src/App.js</code> and save to reload.
